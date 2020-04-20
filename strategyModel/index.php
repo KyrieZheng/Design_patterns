@@ -12,7 +12,7 @@ interface MathStrategy {
 //加法
 class MathAdd implements MathStrategy
 {
-    public function method($int1, $int2)
+    public function method(int $int1, int $int2)
     {
         return $int1 + $int2;
         // TODO: Implement method() method.
