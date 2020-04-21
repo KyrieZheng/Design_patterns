@@ -94,7 +94,6 @@ $calculatorMulti = new Calculator(3);
 $multi = $calculatorMulti->getResult(3, 5);
 $calculatorDivision = new Calculator(4);
 $division = $calculatorDivision->getResult(4, 2);
-
 var_dump([$add, $sub, $multi, $division]);
 
 
