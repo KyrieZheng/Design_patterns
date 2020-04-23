@@ -182,6 +182,6 @@ class OCarOther extends CarOther
 $carBuilder = new CarBuilder();
 $carBuilder->builderCarBody(new CarbonFiberCarBody());
 $carBuilder->builderCarTire(new SnowCarTire());
-$carBuilder->builderCarEngine(new V9CarEngine());
+//$carBuilder->builderCarEngine(new V9CarEngine());
 $carBuilder->builderCarOther(new OCarOther());
 $carBuilder->show();
