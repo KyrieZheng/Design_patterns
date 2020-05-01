@@ -1,6 +1,9 @@
 <?php
 
 class Node {
+    /**
+     * @var Node
+     */
     public $next = null;
     public $val;
 
@@ -65,7 +68,20 @@ $f2->next(new Node(8));
 $f2->next->next(new Node(4));
 
 $m = new Solution();
-var_dump($m->addTwoNumbers($f1, $f2));
+$s = $m->addTwoNumbers($f1, $f2);
+$r = "";
+
+$ss = $s->next;
+
+while (true) {
+    $r .= $s->val;
+    $s = $s->next;
+    if ($s == null) {
+        break;
+    }
+}
+
+var_dump($r);
 
 
 
